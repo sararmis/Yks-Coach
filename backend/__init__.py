@@ -1,0 +1,1 @@
+"""YKS Coach backend paketi."""
