@@ -43,3 +43,28 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Local environment and secrets (commit only example files)
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Editors and operating systems
+.vscode/*.code-workspace
+Thumbs.db
+
+# Common backend artifacts
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/.coverage/
+backend/coverage/
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/.ruff_cache/
+backend/.venv/
+backend/venv/
+backend/**/__pycache__/

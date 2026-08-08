@@ -1,0 +1,27 @@
+name: Özellik isteği
+description: Yeni bir işi, kapsamı net şekilde önerin.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: İhtiyaç
+      description: Hangi kullanıcı problemi çözülüyor?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Kabul kriterleri
+      description: İşin tamamlandığını gösteren ölçülebilir maddeleri yazın.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Alan
+      options: [Flutter, Backend, DevOps, Diğer]
+    validations:
+      required: true
+

@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Flutter: Kontrol",
+      "type": "shell",
+      "command": "dart format --output=none --set-exit-if-changed . && flutter analyze --fatal-infos && flutter test",
+      "windows": {
+        "command": "dart format --output=none --set-exit-if-changed .; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; flutter analyze --fatal-infos; if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }; flutter test"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": ["$dart-analyze", "$dart-test"]
+    },
+    {
+      "label": "Flutter: Çalıştır",
+      "type": "shell",
+      "command": "flutter run",
+      "problemMatcher": []
+    }
+  ]
+}
+

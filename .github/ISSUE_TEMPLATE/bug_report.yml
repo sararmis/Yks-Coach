@@ -1,0 +1,32 @@
+name: Hata bildirimi
+description: Tekrarlanabilir bir problemi bildirin.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem
+      description: Ne oldu, ne olmasını bekliyordunuz?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Tekrarlama adımları
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Alan
+      options: [Flutter, Backend, DevOps, Diğer]
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Ortam
+      description: İşletim sistemi, cihaz ve ilgili sürümler.
+
