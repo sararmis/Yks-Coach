@@ -10,9 +10,9 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:yks_coach/main.dart';
 
 void main() {
-  testWidgets('Deneme ekranı açılır', (WidgetTester tester) async {
+  testWidgets('YKS Coach ana sayfası açılır', (WidgetTester tester) async {
     await tester.pumpWidget(const MyApp());
 
-    expect(find.text('deneme'), findsOneWidget);
+    expect(find.text('Merhaba, Talha! 👋'), findsOneWidget);
   });
 }
