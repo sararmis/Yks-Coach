@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             const Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text('Merhaba, Ahmet! 👋', style: TextStyle(fontSize: 23, fontWeight: FontWeight.w800)),
+                Text('Merhaba, Mehmet! 👋', style: TextStyle(fontSize: 23, fontWeight: FontWeight.w800)),
                 SizedBox(height: 4),
                 Text('Bugün harika bir gün!', style: TextStyle(color: Colors.white60)),
               ]),
